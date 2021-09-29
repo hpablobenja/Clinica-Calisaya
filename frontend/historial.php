@@ -8,7 +8,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Responsive Navigation Menu</title>
+      <title>Clinica Calisaya</title>
       <link rel="stylesheet" href="css/navbar.css">
       <link rel="stylesheet" href="css/tablaHistorial.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -29,8 +29,7 @@
          </ul>
       </nav>
       <section id="main-container">
-      <div class="">
-      <section class="h1"><h1>HISTORIAL MEDICO</h1></section>
+      <section class="h1"><h3>HISTORIAL MEDICO</h3></section>
       <table>
 			<thead>
 			<td>#</td>
@@ -56,7 +55,6 @@
 	}
 	 ?>
 		</table>
-      </div>
       </section>
    </body>
 </html>

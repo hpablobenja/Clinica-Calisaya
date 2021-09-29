@@ -5,12 +5,12 @@
 	Color iluminado: 369681;
 */
 body{
-	background-color: #632432;
+	background-image: url('../assets/img/fondo3.jpg');
 	font-family: Arial;
 }
 
 #main-container{
-	margin: 150px auto;
+	margin: 50px auto;
 	width: 600px;
 }
 
@@ -39,7 +39,9 @@ tr:hover td{
 	color: white;
 }
 .h1{
-	color: white;
+	color: #01579B;
 	text-align: center;
 	padding: 1em;
+	margin-left: 2em;
+	font-size: 24px;
 }
