@@ -23,9 +23,7 @@
             <?php echo $error; ?>
         </div>
     <?php endif; ?>
-    <div> 
-    <button class="botons" type="submit" value="Registrar">Registrar</button>
-    </div> 
+  
     </form>
     <p><a  href="principal.php"><button class="botons">REGRESAR</button></a></p>
   </section>
