@@ -21,7 +21,6 @@
          <i class="fas fa-bars"></i>
          </label>
          <ul>
-            <li><a href="#">Historial Clinico</a></li>
             <li><a href="principal.php">Registro Reservas</a></li>
             <li><a href="RegistrarHistorial.php">Registrar Historial</a></li>
             <li><a href="register.php">Nuevo Usuario</a></li>
