@@ -28,6 +28,22 @@ USE `login` ;
 -- Estructura de tabla para la tabla `historial`
 --
 
+CREATE TABLE `historial` (
+  `id` int(11) NOT NULL,
+  `codigo` varchar(123) NOT NULL,
+  `nombre` varchar(123) NOT NULL,
+  `carnet` varchar(123) NOT NULL,
+  `tratamiento` varchar(123) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `historial`
+--
+
+INSERT INTO `historial` (`id`, `codigo`, `nombre`, `carnet`, `tratamiento`) VALUES
+(1, '0001', 'Pablo Benjamin', '9922392', 'Ortodoncia'),
+(2, '0002', 'Juan Luis', '9242142', 'Limpieza bucal');
+
 -- --------------------------------------------------------
 
 --
