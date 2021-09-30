@@ -23,18 +23,13 @@
 			<td>email</td>
 			<td>telefono</td>	
 			</thead>
-			<?php 
-				$sql="SELECT * from tabla";
-				$result=mysqli_query($conexion,$sql);
-
-				while($mostrar=mysqli_fetch_array($result)){
-		 	?>
+		
 			<tr>
-			<td><?php echo $mostrar['id'] ?></td>
-			<td><?php echo $mostrar['nombre'] ?></td>
-			<td><?php echo $mostrar['apellido'] ?></td>
-			<td><?php echo $mostrar['email'] ?></td>
-			<td><?php echo $mostrar['telefono'] ?></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
 		</tr>
 		<?php 
 	}

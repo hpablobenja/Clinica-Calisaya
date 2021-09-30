@@ -9,7 +9,7 @@
 </head>
 <body>
   <section class="form-register container-form">
-    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
+    <form action="" method="post" class="form">
     <div>
     <h4>Registrar Nuevo Usuario</h4>
     <input class="controls" type="text" name="correo" id="1" placeholder="Ingrese su correo">
@@ -18,11 +18,6 @@
     <input class="controls" type="password" name="clave2" id="4" placeholder="Reescriba su contraseña">
     <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
     </div>
-    <?php if(!empty($error)): ?>
-        <div class="mensaje">
-            <?php echo $error; ?>
-        </div>
-    <?php endif; ?>
     <div>
     <button class="botons" type="submit" value="Registrar">Registrar</button>
     </div>
