@@ -38,7 +38,7 @@
             
             
         }
-        
+        //asdfdsaf
         if ($error == ''){
             $statement = $conexion->prepare('INSERT INTO historial (id, codigo, nombre, carnet, tratamiento) VALUES (null, :codigo, :nombre, :carnet, :tratamiento)');
             $statement->execute(array(
