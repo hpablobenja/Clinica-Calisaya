@@ -9,7 +9,7 @@
 </head>
 <body>
   <section class="form-register container-form">
-    <form action="" method="post" class="form">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
     <div>
     <h4>Registrar Historial Clinico</h4>
     <input class="controls" type="text" name="codigo" id="1" placeholder="Ingrese código ">
@@ -18,6 +18,11 @@
     <input class="controls" type="text" name="tratamiento" id="4" placeholder="Ingrese tratamiento">
     <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
     </div>
+    <?php if(!empty($error)): ?>
+        <div class="mensaje">
+            <?php echo $error; ?>
+        </div>
+    <?php endif; ?>
     <div> 
     <button class="botons" type="submit" value="Registrar">Registrar</button>
     </div> 

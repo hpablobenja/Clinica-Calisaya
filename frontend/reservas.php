@@ -37,13 +37,18 @@
 			<td>HORA</td>
 			<td>FECHA</td>	
 			</thead>
-			
+			<?php 
+				$sql="SELECT * from reservas";
+				$result=mysqli_query($conexion,$sql);
+
+				while($mostrar=mysqli_fetch_array($result)){
+		 	?>
 			<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><?php echo $mostrar['id'] ?></td>
+			<td><?php echo $mostrar['nombre'] ?></td>
+			<td><?php echo $mostrar['correo'] ?></td>
+			<td><?php echo $mostrar['hora'] ?></td>
+			<td><?php echo $mostrar['fecha'] ?></td>
 		</tr>
 		<?php 
 	}

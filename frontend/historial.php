@@ -38,13 +38,18 @@
 			<td>CARNET</td>
 			<td>TRATAMIENTO</td>	
 			</thead>
-			
+			<?php 
+				$sql="SELECT * from historial";
+				$result=mysqli_query($conexion,$sql);
+
+				while($mostrar=mysqli_fetch_array($result)){
+		 	?>
 			<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><?php echo $mostrar['id'] ?></td>
+			<td><?php echo $mostrar['codigo'] ?></td>
+			<td><?php echo $mostrar['nombre'] ?></td>
+			<td><?php echo $mostrar['carnet'] ?></td>
+			<td><?php echo $mostrar['tratamiento'] ?></td>
 		</tr>
 		<?php 
 	}

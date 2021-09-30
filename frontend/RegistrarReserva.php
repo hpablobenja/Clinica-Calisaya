@@ -16,7 +16,7 @@
             </div>
         </div>
         
-        <form action="" method="post" class="form">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
             <div class="welcome-form"><h1>FORMULARIO DE REGISTRO</h1></div>
             
             <div class="user line-input">
@@ -35,6 +35,12 @@
                 <label class="lnr lnr-lock"><b>Fecha: </b></label>
                 <input type="date" name="fecha" placeholder="Fecha">
             </div>
+            
+            <?php if(!empty($error)): ?>
+            <div class="mensaje">
+                <?php echo $error; ?>
+            </div>
+            <?php endif; ?>
             
             <button type="submit">Registrarse<label class="lnr lnr-chevron-right"></label></button>
                

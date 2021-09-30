@@ -16,12 +16,12 @@
 <div class="container-form">
         <div class="header">
             <div class="menu">
-                <a href=""><li class="module-login">Principal</li></a>
-                <a href=""><li class="module-register active">Registrar</li></a>
+                <a href="index.php"><li class="module-login">Principal</li></a>
+                <a href="register.php"><li class="module-register active">Registrar</li></a>
             </div>
         </div>
         
-        <form action="" method="post" class="form">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post" class="form">
             <div class="welcome-form"><h1>Bienvenido</h1></div>
             
             <div class="user line-input">
@@ -40,6 +40,12 @@
                 <label class="lnr lnr-lock"></label>
                 <input type="password" placeholder="Confirmar contraseña" name="clave2">
             </div>
+            
+            <?php if(!empty($error)): ?>
+            <div class="mensaje">
+                <?php echo $error; ?>
+            </div>
+            <?php endif; ?>
             
             <button type="submit">Registrarse<label class="lnr lnr-chevron-right"></label></button>
                
