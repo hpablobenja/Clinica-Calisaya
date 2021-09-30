@@ -48,6 +48,7 @@
                     <a href="./SignUp" class="register-link"> Registrese aqui</a>
                 </div>
             </form>
+            <a type="button" class="botonPrincipal btn btn-dark" href="./index.php">Regresar Pagina Principal</a>
         </div>
     </div>
     <div class="col-lg-6 col-md-6 d-none d-md-block image-container"></div>
