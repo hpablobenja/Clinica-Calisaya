@@ -24,7 +24,7 @@
             <li><a href="#">Registro Reservas</a></li>
             <li><a href="RegistrarHistorial.php">Registrar Historial</a></li>
             <li><a href="register.php">Nuevo Usuario</a></li>
-          
+            <li><a href="cerrar.php">Cerrar Sesion</a></li>
          </ul>
       </nav>
    <section id="main-container">
